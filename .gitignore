@@ -9,10 +9,11 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Mm]emoryCaptures/
-/Game2/Library
-/Game1/Library
-/Game2/.idea/
-/Game1/.idea/
+/Platformer/Library/
+/RunAndShots/Library/
+/Platformer/.idea/
+/RunAndShots/.idea/
+/RunAndShots/Temp/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
