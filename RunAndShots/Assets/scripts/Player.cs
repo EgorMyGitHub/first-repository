@@ -68,7 +68,7 @@ public class Player : MonoBehaviour
         Rigid.freezeRotation = true;
 
         OldScore = PlayerPrefs.GetInt("Score",OldScore);
-        
+
         StartCoroutine(ScoreUpdate());
     }
 
@@ -100,6 +100,11 @@ public class Player : MonoBehaviour
             MenuButton.gameObject.SetActive(true);
             
             StopCoroutine(ScoreUpdate());
+            
+            if (Score >= OldScore)
+            {
+                PlayerPrefs.SetInt("Score",Score);
+            }
 
             Time.timeScale = 0;
         }
@@ -113,11 +118,6 @@ public class Player : MonoBehaviour
 
             ScoreText.text = "Score - " + Score;
             
-            if (Score >= OldScore)
-            {
-                PlayerPrefs.SetInt("Score",Score);
-            }
-
             yield return new WaitForSeconds(0.5f);
         }
     }

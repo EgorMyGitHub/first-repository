@@ -9,10 +9,15 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Mm]emoryCaptures/
+
 /Platformer/Library/
 /RunAndShots/Library/
+/WallAndSmile/Library/
+
 /Platformer/.idea/
+/WallAndSmile/.idea/
 /RunAndShots/.idea/
+
 /RunAndShots/Temp/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
