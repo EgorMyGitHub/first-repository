@@ -27,13 +27,9 @@ public class Player : MonoBehaviour
 
     private float timeForMove;
 
-    private Rigidbody2D rigid;
-
     private void Awake()
     {
         Time.timeScale = 1;
-        
-        rigid = GetComponent<Rigidbody2D>();
     }
 
     private void Update()

@@ -7,18 +7,19 @@ using UnityEngine.UI;
 
 public class ButtonController : MonoBehaviour
 {
+    [SerializeField]
     private Player p;
     
-    private void Awake()
+    private void Start()
     {
-        FindObjectOfType<Player>().RestartButton.onClick.AddListener(Restart);
-        FindObjectOfType<Player>().MenuButton.onClick.AddListener(MenuLoad);
+        p.RestartButton.onClick.AddListener(Restart);
+        p.MenuButton.onClick.AddListener(MenuLoad);
     }
 
     private void OnDestroy()
     {
-        FindObjectOfType<Player>().RestartButton.onClick.RemoveListener(Restart);
-        FindObjectOfType<Player>().MenuButton.onClick.RemoveListener(MenuLoad);
+        p.RestartButton.onClick.RemoveListener(Restart);
+        p.MenuButton.onClick.RemoveListener(MenuLoad);
     }
 
     private void MenuLoad()

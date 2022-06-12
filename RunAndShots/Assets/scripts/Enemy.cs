@@ -9,7 +9,6 @@ public class Enemy : MonoBehaviour
     [SerializeField]
     private float speed;
 
-    [SerializeField] 
     private Player m_Player;
     
     private Transform player;

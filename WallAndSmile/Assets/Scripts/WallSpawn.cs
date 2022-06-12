@@ -10,7 +10,8 @@ public class WallSpawn : MonoBehaviour
     [SerializeField] 
     private GameObject[] variantsSpawn;
 
-    [SerializeField] private Transform spawnPos;
+    [SerializeField] 
+    private Transform spawnPos;
 
     private void Awake()
     {
