@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 using Button = UnityEngine.UI.Button;
 
-public class GameButtonController : MonoBehaviour
+public class GameButtonControler : MonoBehaviour
 {
     [field: SerializeField] 
     private Button QuitButton;
@@ -30,7 +30,7 @@ public class GameButtonController : MonoBehaviour
         RestartButton.onClick.RemoveListener(Restart);
         MenuButton.onClick.RemoveListener(Menu);
     }
-        
+    
     private void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

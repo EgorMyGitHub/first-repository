@@ -29,6 +29,8 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
+        DieScreen.gameObject.SetActive(false);
+        
         rigid = GetComponent<Rigidbody>();
 
         Time.timeScale = 1;
