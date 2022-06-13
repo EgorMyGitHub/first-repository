@@ -13,16 +13,16 @@
 /Platformer/Library/
 /RunAndShots/Library/
 /WallAndSmile/Library/
-/Runner/Library
+/MyRunner/Library
 
 /Platformer/.idea/
 /WallAndSmile/.idea/
 /RunAndShots/.idea/
-/Runner/.idea/
+/MyRunner/.idea/
 
 /RunAndShots/Temp/
 
-/Runner/Build/
+/MyRunner/Build/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
